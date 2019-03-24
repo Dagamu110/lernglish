@@ -1,0 +1,59 @@
+body{
+	background-color: #3399ff;
+}
+.Container{
+	background-color: #5FC8FC;
+
+	width: 90%;
+	max-width:850px;
+	margin:auto;
+	margin-top: 100px;
+	min-height: 550px;
+	border-radius: 20px;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.start{
+	background-color: #7EE273;
+	max-width: 200px;
+	padding: 5px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+	align-self: center;
+}
+select{
+	max-width: 200px;
+	margin: 25px;
+	border:2px solid #357cfd;
+	background-color: #ececec;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 17px;
+}
+form{
+	width: 80%;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	text-align: center;
+	
+}
+.selects{
+	width: 100%;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+/*5FC8FC
+7EE273
+FFE74C
+FF5964
+FFFFFF*/

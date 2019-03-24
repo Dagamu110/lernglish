@@ -1,0 +1,86 @@
+
+
+.Container{
+	flex-flow:column wrap;
+	padding: 15px;
+	
+
+	justify-content: space-between;
+}
+h2{
+	width: 100%;
+	text-align: center;
+}
+#options{
+	width: 50%;
+	
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 20px;
+	align-self: center;
+}
+#option1, #option2, #option3, #option4 {
+	display: none;
+	width: 40%;
+	font-family: Arial;
+	margin: 15% 2px;
+	padding: 5px;
+	text-align: center;
+	background: rgba(240,95,70,1);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,95,70,1)), color-stop(24%, rgba(245,135,120,1)), color-stop(46%, rgba(235,97,76,1)), color-stop(63%, rgba(246,41,12,1)), color-stop(85%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+	background: linear-gradient(to bottom, rgba(240,95,70,1) 0%, rgba(245,135,120,1) 24%, rgba(235,97,76,1) 46%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05f46', endColorstr='#e73827', GradientType=0 ); 
+	border-radius: 10px;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+	color: black;
+
+}
+.top{
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+.coins{
+	align-self: flex-end;
+	margin-right: 10px;
+}
+#points{
+	font-family: Arial;
+	font-size: 20px;
+}
