@@ -82,8 +82,10 @@ var lose =  function(){
 		refreshOptions();
 		$('option1').innerText = "Back to Menu";
 		$('option1').setAttribute('href','../')
+		$('option1').setAttribute('style','display:inline-block;')
 		$('option2').innerText = "Restart";
 		$('option2').setAttribute('onclick','javascript:window.location.reload();')
+		$('option2').setAttribute('style','display:inline-block;')
 	}else{
 		lives--;
 	}
