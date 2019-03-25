@@ -31,6 +31,14 @@ choosePractice();
 var verbosElegibles;
 var electedVerb;
 
+function refreshOptions(){
+	for (var i = 1; i <= 4; i++) {
+		$('option' + i).innerText = "";
+		$('option' + i).setAttribute('style','display:none;')
+
+	}
+}
+
 var changeVerb =  function () {
 	n_verb = Math.floor(Math.random() * php[modo].length);
 	php[modo].splice(n_verb,1);
@@ -69,5 +77,16 @@ var changeVerb =  function () {
 }
 var lose =  function(){
 	$('live' +  lives).setAttribute('style','display:none;');
-	lives--;
+	if (lives == 1) {
+		titulo.innerText = "You lose";
+		refreshOptions();
+		$('option1').innerText = "Back to Menu";
+		$('option1').setAttribute('href','../')
+		$('option2').innerText = "Restart";
+		$('option2').setAttribute('onclick','javascript:window.location.reload();')
+	}else{
+		lives--;
+	}
+	
+
 }
