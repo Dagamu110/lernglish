@@ -75,6 +75,7 @@
 </head>
 <body>
 	<div class="Container">
+		<h1 class="title">Lernglish</h1>
 		<form action="practice.php" method="get">
 			<div class="selects">
 				<select name="lists" id="lists">
@@ -85,6 +86,7 @@
 				</select>
 				<select name="mode" id="mode" style="display: none;">
 					<option default>Modos</option>
+					<option>Lista</option>
 				</select>
 			</div>
 			<br>

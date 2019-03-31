@@ -1,3 +1,23 @@
+@font-face {font-family: "Clobber Grotesk W01 Light";
+  src: url("5621f8cab110decb922898f594ecd660.eot"); /* IE9*/
+  src: url("5621f8cab110decb922898f594ecd660.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("5621f8cab110decb922898f594ecd660.woff2") format("woff2"), /* chrome、firefox */
+  url("5621f8cab110decb922898f594ecd660.woff") format("woff"), /* chrome、firefox */
+  url("5621f8cab110decb922898f594ecd660.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("5621f8cab110decb922898f594ecd660.svg#Clobber Grotesk W01 Light") format("svg"); /* iOS 4.1- */
+}
+
+.title{
+    font-family:"Clobber Grotesk W01 Light" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+    color:white;
+    font-size: 60px;
+    text-shadow: 5px 5px #558ABB;
+ }
 body{
 	background-color: #3399ff;
 }
@@ -10,12 +30,14 @@ body{
 	margin-top: 100px;
 	min-height: 550px;
 	border-radius: 20px;
+	padding: 10px;
 
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
+
 .start{
 	background-color: #7EE273;
 	max-width: 200px;

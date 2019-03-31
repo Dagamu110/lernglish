@@ -1,0 +1,69 @@
+@font-face {font-family: "Clobber Grotesk W01 Light";
+  src: url("5621f8cab110decb922898f594ecd660.eot"); /* IE9*/
+  src: url("5621f8cab110decb922898f594ecd660.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("5621f8cab110decb922898f594ecd660.woff2") format("woff2"), /* chrome、firefox */
+  url("5621f8cab110decb922898f594ecd660.woff") format("woff"), /* chrome、firefox */
+  url("5621f8cab110decb922898f594ecd660.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("5621f8cab110decb922898f594ecd660.svg#Clobber Grotesk W01 Light") format("svg"); /* iOS 4.1- */
+}
+
+.title{
+    font-family:"Clobber Grotesk W01 Light" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+
+    color:white;
+    font-size: 60px;
+    text-shadow: 5px 5px #558ABB;
+ }
+ .column{
+    background-color: #357cfd;
+    border-radius: 10px;
+    margin: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    
+ }
+.column span , .column select{
+  text-align: center;
+  font-size: 1.23em;
+  background-color: #5fc8fc;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: none;
+}
+.column > p {
+ text-align: center;
+}
+ .columns{
+  width: 90%;
+  background-color: #558abb;
+  border-radius: 10px;
+  padding: 10px;
+
+  display: flex;
+  flex-flow: row wrap;
+ }
+ button{
+  width: 40%;
+  font-family: Arial;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background: rgba(240,95,70,1);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,95,70,1)), color-stop(24%, rgba(245,135,120,1)), color-stop(46%, rgba(235,97,76,1)), color-stop(63%, rgba(246,41,12,1)), color-stop(85%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+  background: linear-gradient(to bottom, rgba(240,95,70,1) 0%, rgba(245,135,120,1) 24%, rgba(235,97,76,1) 46%, rgba(246,41,12,1) 63%, rgba(240,47,23,1) 85%, rgba(231,56,39,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f05f46', endColorstr='#e73827', GradientType=0 ); 
+  border-radius: 10px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px -6px rgba(0,0,0,0.75);
+  color: black;
+ }
