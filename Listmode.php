@@ -22,7 +22,7 @@
 <body>
 	<div class='Container' id="Container">
 		<h1 class="title">Lernglish</h1>
-		<div class="columns" id='div-columns'></div>
+		<div class="columns" id='div-columns'><div id="checks" style="display: none"></div></div>
 		<button id="check">Revisar</button>
 	</div>
 	<script type="text/javascript" src="js/funciones.js"></script>

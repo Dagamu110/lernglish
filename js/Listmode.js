@@ -8,11 +8,12 @@ for (var i = 0; i <= modos.length - 1; i++) {
 	container_columns.appendChild(column);
 }
 
-function cleanInterface(k=0) {
+function cleanInterface() {
 	for (var i = 0; i <= modos.length - 1; i++) {
 		$('column-' + modos[i]).innerHTML = "";
 		
 	}
+	container_columns.removeChild($('checks'));
 }
 
 var changeInterface = function(){
@@ -68,6 +69,7 @@ changeInterface();
 check_div = document.createElement('div');
 
 var check = function () {
+
 	check_div.setAttribute('class','column');
 	check_div.id = 'checks';
 	container_columns.appendChild(check_div);
