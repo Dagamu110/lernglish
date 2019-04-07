@@ -79,13 +79,13 @@
 		<form action="practice.php" method="get">
 			<div class="selects">
 				<select name="lists" id="lists">
-					<option default>Listas</option>
+					<option selected disabled>Listas</option>
 				</select>
 				<select name="type" id="type" style="display: none;">
-					<option default>Tipos</option>
+					<option selected disabled>Tipos</option>
 				</select>
 				<select name="mode" id="mode" style="display: none;">
-					<option default>Modos</option>
+					<option selected disabled>Modos</option>
 					<option>Lista</option>
 				</select>
 			</div>

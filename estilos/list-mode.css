@@ -21,26 +21,23 @@
  .column{
     background-color: #357cfd;
     border-radius: 10px;
-    margin: 10px;
 
     display: flex;
     flex-flow: column wrap;
-    flex-grow: 1;
     justify-content: space-around;
+    align-items: center;
     
  }
 .column span , .column select{
   text-align: center;
   font-size: 1.23em;
   background-color: #5fc8fc;
-  margin: 5px;
-  padding: 5px;
+  width: 90%;
   border-radius: 10px;
   max-width: none;
+  margin: 5%;
 }
-.column > p {
- text-align: center;
-}
+
  .columns{
   width: 90%;
   background-color: #558abb;
@@ -48,7 +45,8 @@
   padding: 10px;
 
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  justify-content: space-around;
  }
  button{
   width: 40%;
