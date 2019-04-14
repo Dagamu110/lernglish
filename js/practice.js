@@ -1,17 +1,25 @@
 var titulo = $('h2');
-var a_options = [];
-var practiceMode = '';
-var points = -1;
 var span_points  = $('points');
-var lives =  3;
 
-for (var i = 1; i <= 4; i++) {
+var a_options = [];
+var verbosElegibles;
+
+var practiceMode = '';
+var electedVerb;
+
+var points = -1;
+var lives =  3;
+var modo;
+var num_options = 4;
+var n_verb;
+
+for (var i = 1; i <= num_options; i++) {
 	a_options.push($('option' + i));
 }
 
 for (var i = 0; i <= modos.length - 1; i++) {
 	if (titulo.innerText == modos[i] + ":") {
-		var modo = i;
+		modo = i;
 		var restantModes = removeItemFromArr(modos,modos[modo]);
 	}
 }
@@ -23,25 +31,24 @@ var choosePractice = function () {
 	titulo.innerText += "What do you want to practice?";
 	for (var i = 0; i <= restantModes.length - 1; i++) {
 		a_options[i].innerText = restantModes[i];
-		a_options[i].setAttribute('style','display:inline-block;')
-		a_options[i].setAttribute("onclick","chooseVarPracticeMode('" + restantModes[i] + "');");
+		a_options[i].setAttribute('style', 'display:inline-block;')
+		a_options[i].setAttribute("onclick", "chooseVarPracticeMode('" + restantModes[i] + "');");
 	}
 }
+
 choosePractice();
-var verbosElegibles;
-var electedVerb;
+
 
 function refreshOptions(){
-	for (var i = 1; i <= 4; i++) {
+	for (var i = 1; i <= num_options; i++) {
 		$('option' + i).innerText = "";
-		$('option' + i).setAttribute('style','display:none;')
+		$('option' + i).setAttribute('style', 'display:none;')
 
 	}
 }
 
 var changeVerb =  function () {
 	n_verb = Math.floor(Math.random() * php[modo].length);
-	php[modo].splice(n_verb,1);
 	n_modePractice = 0;
 
 	points++;
@@ -54,12 +61,16 @@ var changeVerb =  function () {
 			n_modePractice = i;
 		}
 	}
-	verbosElegibles = [php[n_modePractice][n_verb + 1]];
-		electedVerb = php[n_modePractice][n_verb + 1];
-	php[n_modePractice].splice(n_verb + 1,1);
 
-	for (var i =1; i <= 3; i++) {
-		verbosElegibles.push(php[n_modePractice][Math.floor(Math.random() * php[n_modePractice].length)]);
+	verbosElegibles = [php[n_modePractice][n_verb]];
+	electedVerb = php[n_modePractice][n_verb];
+
+	for (var i =1; i <= num_options - 1; i++) {
+		var option = php[n_modePractice][Math.floor(Math.random() * php[n_modePractice].length)];
+		while(verbosElegibles.includes(option)){
+			option = php[n_modePractice][Math.floor(Math.random() * php[n_modePractice].length)];
+		}
+		verbosElegibles.push(option);
 	}
 	verbosElegibles.sort();
 

@@ -104,7 +104,7 @@ Ser Dueño de/Poseer,
 Pintar,
 Llamar por Telefono/Telefonear,
 Situar/Ubicar,
-Jugar/Tocear,
+Jugar/Tocar,
 Practicar,
 Preferir,
 Preparar,
@@ -141,6 +141,7 @@ Sugerir,
 Sorpreder,
 Saborear,
 Conversar,
+hacer prueba,
 Agradecer,
 Tocar/Palpar,
 Viajar,
@@ -159,6 +160,3 @@ Observar,
 Encerar,
 Trabajar,
 Preocuparse/se
-
-
-
